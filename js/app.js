@@ -4,10 +4,14 @@ var questionCount= 0;
 // var radioValue='';
 var score = 0;
 
+// Increase the question number 
+
 function questionCountIncrease() {
 	questionCount += 1;
 	$(".questionnumber").html( questionCount );
 }
+
+// Show picture of ramen when the user answers a question correct.
 
 function unhideRamen(){
 	if(score == 1){
@@ -28,15 +32,21 @@ function unhideRamen(){
 
 }
 
+// Increase the total score by 1 when user answers question correct.
+
 function scoreUpdate(){
 	score += 1;
 	$(".tally").text(score);
 }
 
+// Reset the score when the user wants to restart the quiz.
+
 function resetScore(){
 	score = 0;
 	$(".tally").text(score);
 }
+
+// Checks to see if the checked answer matches with the correct answer in the array.
 
 function radioSearch() {
 $("input[type='radio']:checked").each(function(){
@@ -47,16 +57,17 @@ $("input[type='radio']:checked").each(function(){
 			$("input:radio").removeAttr("checked");
 			alert("value is located in array");
 			scoreUpdate();
-			// $(".tally").text(score);
 			unhideRamen();
 		}		
-	// if( $.inArray(radioValue, correctAnswersList) != -1){
 	else{
 		$("input:radio").removeAttr("checked");
 	}
 }
 });
 }
+
+// Changes the question displayed when the question changes.
+
 function questionChange(){
 	if (questionCount == 2){
 		$(".questionbox .question").text(questions.question2);
@@ -78,6 +89,8 @@ function questionChange(){
 			questionCount = 0;
 	}	
 }
+
+// Start the Quiz when the start quiz button is Clicked
 
 $(".startquizbox").click(function(){
 	$(".startquizbox").fadeOut(2000);
@@ -103,6 +116,9 @@ $(".startquizbox").click(function(){
 
 });
 
+// Restart the Quiz when the play again box is clicked
+
+
 $(".playagainbox").click(function(){
 	$(".playagainbox").fadeOut(2000);
 	$(".score-ramen").children().css('visibility','hidden');
@@ -115,20 +131,10 @@ $(".playagainbox").click(function(){
 		$(".questionbox .question").text(questions.question1);
 		questionCall();
 	}
-	// else{
-	// 	alert("notquestion1");
-	// }
-
-	// $(document).on("click", ".submitbutton", function(){
-	// radioSearch();
-	// questionCountIncrease();
-	// questionCall();
-	// questionChange();
-	
-	// });
   
-
 });
+
+// Have the answers to be shown within the HTML unordered list
 
 function questionCall() {
 

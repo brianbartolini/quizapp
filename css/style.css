@@ -1,0 +1,198 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*
+.div {
+	border: 1px solid black;
+}*/
+body {
+	padding: 0px;
+	margin: 0px;
+	width: 1300px;
+	height: 700px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+	width: 1300px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+}	
+
+.title .header {
+	text-align: center;
+}
+
+/*.title h1{
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 5rem;
+}*/
+
+/*.three-columns{
+	margin-top: 50px;
+	
+
+}*/
+
+.score-section{
+	float: left;
+	text-align: center;
+	width: 350px;
+}
+
+.score-ramen{
+	list-style-type: none;
+	color:  #e60000;
+
+}
+
+.score-ramen li{
+	margin: -1rem auto; 
+}
+
+.number {
+	font-size: 6rem;
+}
+
+.ramen1,
+.ramen2,
+.ramen3,
+.ramen4,
+.ramen5 {
+
+visibility: hidden;
+
+
+}
+
+
+/*Question Section*/
+
+
+.question-section {
+	background-image: url('../image/cupnoodles.png');
+	width: 600px;
+	float: left;
+	background-size: 500px 600px;
+	background-repeat: no-repeat;
+	height: 40rem;
+	margin: 0 auto;
+	background-position: center;
+	text-align: center;
+
+}
+
+.questionbox {
+	width: 500px;
+	height: 200px;
+	/*background-color: rgba(114, 125, 140, 0.40);*/
+	border-radius: 10%;
+	display: none;
+	margin-top: 50px;
+	margin-bottom: -100px;
+	
+
+}
+
+.question{
+	text-align: center;
+	font-size: 1.5rem;
+	height: 200px;
+	/*line-height:200px;*/
+	word-wrap:break-word;	
+}
+
+.answerbox {
+	width: 400px;
+	height: 400px;
+	/*background-color: rgba(231, 175, 8, 0.55);*/
+	border-radius: 10%;
+	background-image: url('../image/ramennoodle.jpg');
+	display: none;
+	
+}
+
+.answerslist {
+	padding-top: 1.5rem;
+	margin-left: -1rem;
+}
+
+.answerslist li{
+	list-style-type: none;
+	text-align: left;
+	font-size: 2rem;
+	margin-top: 2rem;
+	font-weight: 700;
+}
+
+.answerslist input{
+	visibility: hidden;
+}
+
+.answerslist label{
+	cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+	color: blue;
+}
+
+
+.startquizbox{
+	/*width: 200px;
+	height: 150px;
+	line-height: 150px;
+*/	text-align: center;
+	/*border-radius: 10%;*/
+	margin: 0px auto;
+	margin-top: 5rem;
+	
+}
+
+.playagainbox{
+	/*width: 200px;
+	height: 150px;
+	line-height: 150px;
+*/	text-align: center;
+	/*border-radius: 10%;*/
+	margin: 0px auto;
+	margin-top: 5rem;
+	display: none;
+
+}
+
+.answer-section{
+	float: left;
+	text-align: center;
+	width: 350px;
+}
+
+button:focus {
+	outline:0;
+}
+
+.submitbutton {
+	padding: 1px 3px 1px 3px;
+	font-size: 30px;
+	background-color: #e60000;
+	font-weight: bold;
+	/*text-shadow: 1px 1px #000000;*/
+	color: #ffffff;
+	border-radius: 10%;
+	/*-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;*/
+	/*border: 1px solid #57D6C7;*/
+	cursor: pointer;
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;*/
+}
+
+}
+
+

@@ -120,7 +120,7 @@ $(".startquizbox").click(function(){
 
 
 $(".playagainbox").click(function(){
-	$(".playagainbox").fadeOut(2000);
+	$(".playagainbox").hide();
 	$(".score-ramen").children().css('visibility','hidden');
 	$(".questionbox").fadeIn(3000);
 	$(".answerbox").fadeIn(3000);

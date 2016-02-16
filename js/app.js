@@ -82,7 +82,7 @@ function questionChange(){
 		$(".questionbox .question").text(questions.question5);
 	}
 	else {
-		$(".questionbox .question").text("You answered " + score+ " questions out of 5 questions correctly.");
+		$(".questionbox .question").text("You answered " + score+ " out of 5 questions correctly.");
 		// $(".questionbox").hide();
 		$(".answerbox").hide();
 		$(".playagainbox").fadeIn(3000);

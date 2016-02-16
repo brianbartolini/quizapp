@@ -93,7 +93,7 @@ function questionChange(){
 // Start the Quiz when the start quiz button is Clicked
 
 $(".startquizbox").click(function(){
-	$(".startquizbox").fadeOut(500);
+	$(".startquizbox").hide();
 	$(".questionbox").fadeIn(3000);
 	$(".answerbox").fadeIn(3000);
 	questionCountIncrease();

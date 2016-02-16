@@ -51,11 +51,11 @@ function resetScore(){
 function radioSearch() {
 $("input[type='radio']:checked").each(function(){
 	var radioValue = $(this).next().text();
-	alert(radioValue);
+	// alert(radioValue);
 	for(var i = 0; i < correctAnswersList.length; i++){
 		if(radioValue == correctAnswersList[i]){
 			$("input:radio").removeAttr("checked");
-			alert("value is located in array");
+			// alert("value is located in array");
 			scoreUpdate();
 			unhideRamen();
 		}		
